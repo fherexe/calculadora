@@ -34,7 +34,6 @@ body {
 }
 
 .main-text p {
-    
     max-width: 400px;
     margin-top: 20%;
 }
@@ -108,3 +107,23 @@ button:active {
 
 
 
+@media (max-width:730px) {
+
+    body {
+        height: 140vh;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .main-text {
+        text-align: center;
+        order: 0;
+        margin-bottom: 50px;
+    }
+
+    .main-text p {
+        max-width: 400px;
+        margin-top: 10%;
+    }
+}
