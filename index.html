@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <script src="main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,48 +11,51 @@
 </head>
 <body>
 
-  
-    <h1>Calculadora</h1>
+    <div class="container">
+
+        <div class="main-text">
+            <h1>Calculadora</h1>
+            <h2>Digital</h2>
+            <p>&copy 2023 Desenvolvido por <a href="https://fherexe.github.io/MyLinks/" target="_blank">Fher</a>, todos direitos reservados. </p>
+        </div>
 
         <div id="calculator">
-        <div class="antena"></div>
-        <input type="text" id="display" disabled>
+            <img src="img/Capturar.PNG" alt="">
+            <input type="text" id="display" disabled>
 
-        <br>
-        <button id="ac" class="operator">AC</button>
-        <button id="de" class="operator">BKSP</button>
-        <button id="." class="operator">.</button>
-        <button id="/" class="operator">/</button>
-        <br>
+            <br>
+            <button id="ac" class="operator">AC</button>
+            <button id="de" class="operator">x</button>
+            <button id="." class="operator">.</button>
+            <button id="/" class="operator orange">/</button>
+            <br>
 
-        
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
-        <button id="*" class="operator">X</button>
-        <br>
+            
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="*" class="operator orange">X</button>
+            <br>
 
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button>
-        <button id="-" class="operator">-</button>
-        <br>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="-" class="operator orange">-</button>
+            <br>
 
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="+" class="operator">+</button>
-        <br>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="+" class="operator orange" >+</button>
+            <br>
 
-        <button id="00">00</button>
-        <button id="0">0</button>
-        <button id="." class="operator">.</button>
-        <button id="=" class="operator equal">=</button>
-        <br>
+            <button id="00">00</button>
+            <button id="0">0</button>
+            <button id=",">,</button>
+            <button id="=" class="operator orange">=</button>
+            <br>
 
-
-
-
+        </div>
     </div>
     
 </body>

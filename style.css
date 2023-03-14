@@ -1,86 +1,111 @@
-@charset "utf-8";
-@font-face {
-    font-family: digital;
-    src: url(digital_7/digital-7.ttf);
- }
-
 body {
-    background: rgb(133, 133, 133);
-    display:flex;
-    text-align: center;
     margin: 0;
+    text-align: center;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: #ececec;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:5%;
+}
+
+.main-text {
+    text-align: left;
+    order: 1;
+}
+
+.main-text h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.main-text h1 {
+    color: #020202;
+    font-size: 50px;
+    
+}
+
+.main-text p {
+    
+    max-width: 400px;
+    margin-top: 20%;
+}
+
+.main-text a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+
 }
 
 #calculator {
-    max-width: 360px;
-    background: #1d1d1d;
-    padding: 200px 40px 110px 40px;
-    border-radius: 11em 11em 4em 4em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.527);
+    max-width: 290px;
+    background-color: #000000;
+    padding: 30px 20px 60px 20px;
+    box-shadow: 1px 3px 9px 1px #000000a1;
+    margin-bottom: 1rem;
+    border-radius: 3em;
+    border:1px solid #fff;
 }
 
-.antena {
-    position: absolute;
-    top: 30px;
-    right:44%;
-    background: #1d1d1d;
-    width: 50px;
-    height: 20em;
-    border-radius: 30px;
+#calculator img {
+    width: 100%;
+    border-radius: 20px;
 }
 
 #display {
-    font-family:"digital";
     width: 100%;
-    height: 10em;
-    font-size: 20px;
+    height: 2em;
+    font-size: 30px;
     text-align: right;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    margin-top: 60px;
     padding: 15px;
-    background-color: rgb(211, 255, 202);
+    color:  #ffffff;
+    background-color: #000000;
     border: none;
     box-sizing: border-box;
-    border-radius: 30px 30px 30px 40px;
-    border: 30px solid #000000;
 }
 
 button {
-    width:calc(25% - 10px);
-    height: 50px;
-    font-size: 20px;
-    margin: 10px 5px;
+    width: calc(25% - 10px); /*medidas responsivas*/
+    height: 60px;
+    font-size: 25px;
+    margin: 5px 5px;
     border: none;
-    float: left;
+    float: left; 
+    background-color: #313131;
+    color: #ffffff;
     border-radius: 50%;
-    font-weight: 600;
-    color: #fff;
-    background-color: #1d1d1d;
-    border: 4px solid black;
+    font-weight: 400;
 }
 
 button:hover {
     cursor: pointer;
-
 }
 
 button:active {
-    transform: scale(1.1);
-    transition: 0.5s;
+    transform: scale(0.9);
 }
 
 .operator {
-    color: rgb(204, 0, 204);
-
+    color:#080808d7;
+    background-color: #A0A0A0;
 }
 
-#ac {
-    background:rgb(54, 54, 54);
+
+.orange {
+    color: #fff;
+    background-color: #F69906;
 }
 
-.equal {
-    width:calc(50% - 10px);
-}
+
+
